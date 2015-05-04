@@ -1,0 +1,34 @@
+<!doctype HTML>
+<html>
+	<head>
+		<style>
+			input{
+				padding:10px 20px;font-size:15px;
+			}
+			#output{
+				background:#eee;padding:20px;font-size:25px
+			}
+			#submit{
+				display: inline;
+				padding:10px 20px;font-size:15px;background:#333;color:#fff;
+				cursor: pointer;
+				user-select: none;
+			}
+			#nums{
+				display: inline;
+				padding:10px 20px;font-size:15px;
+				cursor: pointer;
+				user-select: none;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<input id="input" type="text" onkeyup="this.value = this.value.replace(/[^0-9]/, '')"></input>
+			<div id="submit" onclick="Transf()">in Base..</div>
+			<input id="nums" type="number" min="2" max="36" value="10"></input>
+		</form>
+		<div id="output"></div>
+	</body>
+</html>
+<script src="main.js"></script>
